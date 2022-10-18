@@ -1,0 +1,19 @@
+{
+  "name": "tasks",
+  "version": "1.0.0",
+  "description": "tasks about js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andryusha11/tasks-js.git"
+  },
+  "author": "Valchuk Andrew <andrewv2502@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andryusha11/tasks-js/issues"
+  },
+  "homepage": "https://github.com/Andryusha11/tasks-js#readme"
+}
