@@ -7,14 +7,13 @@
 
 const pickProps = (obj, props) => {
   // put your code here
-  let newObj = {};
+  // let newObj = {};
+  // props.map((el) => (newObj[el] = el));
   let resObj = {};
 
-  props.map((el) => (newObj[el] = el));
-
-  for (let key in newObj) {
-    if (obj[key]) {
-      resObj[newObj[key]] = obj[key];
+  for (let key in obj) {
+    if (props.includes(key)) {
+      resObj[key] = obj[key];
     }
   }
   return resObj;
