@@ -5,11 +5,10 @@
 
 // second function
 // input new text
-// console message with new text
 // output undefined
 
 //algo
-// 1. create const message
+// 1. create let message
 // 2. add name into message in first function
 // 3. console result
 // 4. change message into second function
