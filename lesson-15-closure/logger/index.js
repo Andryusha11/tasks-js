@@ -17,7 +17,7 @@
 //  4.2 write it in memory with type log
 //5. create function getRecords
 //  5.1 input type
-//  5.2 return array filtered by type or empty array or array;
+//  5.2 return array filtered by type and sorted by date or empty array or full array;
 
 'use strict';
 
