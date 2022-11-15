@@ -3,3 +3,5 @@ export const setButton = (buttonText) => {
   console.log(body);
   body.innerHTML = buttonText;
 };
+
+setButton('<button>button text</button>');
