@@ -1,7 +1,5 @@
 export const setTitle = (text) => {
-  const res = document.querySelector('.title');
-  res.textContent = text;
-  return res;
+  console.log((document.querySelector('.title').textContent = text));
 };
 
 const text = 'I am Back-End developer';
