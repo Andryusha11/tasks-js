@@ -45,46 +45,33 @@ renderTasks(tasks);
 
 const taskInputElem = document.querySelector('.task-input');
 const createBtnElem = document.querySelector('.create-task-btn');
-const checkboxElems = document.querySelectorAll('.list__item-checkbox');
+const listElems = document.querySelector('.list');
 
-console.log([...checkboxElems]);
-
-const changeDoneInTask = () => {
-  const checkedDone = (event) => {
-    console.log(event.target.checked);
-    console.log(event.target.dataset);
-
-    tasks.filter((el) =>
-      el.id === event.target.dataset ? (el.done = event.target.checked) : null
-    );
-  };
-  [...checkboxElems].map((task) =>
-    task.addEventListener('change', checkedDone)
-  );
+const changeDoneInTask = (event) => {
+  const eventId = event.target.dataset.number;
+  const necessaryTask = tasks.find((el) => {
+    if (el.id == eventId) {
+      el.done = event.target.checked;
+    }
+  });
+  renderTasks(tasks);
 };
 
-changeDoneInTask();
+listElems.addEventListener('change', changeDoneInTask);
 
-const addValueInTask = (event) => {
-  const valueFromInputElem = event.target.value;
+const addValueInTask = () => {
+  const text = taskInputElem.value;
 
-  const task = { text: valueFromInputElem, done: false, id: tasks.length + 1 };
-  console.log(task);
+  const task = { text: text, done: false, id: tasks.length + 1 };
 
   tasks.push(task);
 
-  event.target.value = '';
-};
-
-const addTaskInList = () => {
   renderTasks(tasks);
-  console.log(tasks);
+
+  taskInputElem.value = '';
 };
 
-taskInputElem.addEventListener('change', addValueInTask);
-createBtnElem.addEventListener('click', addTaskInList);
-
-console.log(tasks);
+createBtnElem.addEventListener('click', addValueInTask);
 
 // add id in task
 // add in data-attribute when renderTasks
