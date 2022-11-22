@@ -12,9 +12,11 @@ export const tasks = [
  * @param {object[]} tasksList
  * @return {undefined}
  */
+
+const list = document.querySelector('.list');
+
 const renderTasks = (tasksList) => {
   // put your code here
-  const list = document.querySelector('.list');
 
   const sortTasksList = tasksList
     .sort((a, b) => a.done - b.done)
