@@ -60,6 +60,9 @@ const changeDoneInTask = (event) => {
 listElems.addEventListener('change', changeDoneInTask);
 
 const addValueInTask = () => {
+  if (!taskInputElem.value) {
+    return null;
+  }
   const text = taskInputElem.value;
 
   const task = { text: text, done: false, id: tasks.length + 1 };
