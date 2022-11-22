@@ -57,7 +57,7 @@ const changeDoneInTask = (event) => {
   renderTasks(tasks);
 };
 
-listElems.addEventListener('change', changeDoneInTask);
+listElems.addEventListener('click', changeDoneInTask);
 
 const addValueInTask = () => {
   if (!taskInputElem.value) {
