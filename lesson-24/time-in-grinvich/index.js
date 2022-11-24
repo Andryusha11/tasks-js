@@ -1,8 +1,12 @@
 export const getGreenwichTime = (date) => {
-  const hour = new Date(date).getUTCHours();
-  const minute = new Date(date).getUTCMinutes();
+  const formatter = new Intl.DateTimeFormat('en', {
+    timeZone: 'UTC',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
+  });
 
-  return `${hour}:${minute}`;
+  return formatter.format(date);
 };
 
 const date1 = new Date();
