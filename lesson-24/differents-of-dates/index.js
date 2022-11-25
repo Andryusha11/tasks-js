@@ -3,7 +3,7 @@ export const getDiff = (startDate, endDate) => {
   const secondDate = new Date(endDate);
 
   const diffTime = Math.abs(new Date(firstDate - secondDate));
-  const res = `${Math.ceil(diffTime / (1000 * 60 * 60 * 24))}d ${new Date(
+  const res = `${Math.floor(diffTime / (1000 * 60 * 60 * 24))}d ${new Date(
     diffTime
   ).getHours()}h ${new Date(diffTime).getMinutes()}m ${new Date(
     diffTime
