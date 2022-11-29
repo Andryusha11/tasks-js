@@ -1,0 +1,27 @@
+.page {
+  display: flex;
+  font-family: Arial;
+  font-size: 32px;
+  height: 100vh;
+  width: 100vw;
+}
+.counter {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.counter-button {
+  width: 48px;
+  height: 48px;
+  border: 2px solid grey;
+  border-radius: 8px;
+  background: transparent;
+  font-weight: 700;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+}
+.counter-value {
+  margin: 16px;
+}
