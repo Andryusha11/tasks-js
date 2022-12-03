@@ -1,6 +1,6 @@
 const getMethods = {
   years: 'getFullYear',
-  month: 'getMonth',
+  months: 'getMonth',
   days: 'getDate',
   hours: 'getHours',
   minutes: 'getMinutes',
@@ -10,7 +10,7 @@ const getMethods = {
 
 const setMethods = {
   years: 'setFullYear',
-  month: 'setMonth',
+  months: 'setMonth',
   days: 'setDate',
   hours: 'setHours',
   minutes: 'setMinutes',
