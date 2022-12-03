@@ -18,7 +18,7 @@ const setMethods = {
   milliseconds: 'setMilliseconds',
 };
 
-const shmoment = (someDate) => {
+export const shmoment = (someDate) => {
   let initialValue = someDate;
 
   const calculator = {
