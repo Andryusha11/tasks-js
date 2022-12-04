@@ -5,11 +5,11 @@ export const maxFibonacci = (num) => {
     const prevNumber1 = result[i - 1];
     const prevNumber2 = result[i - 2];
     if (prevNumber1 + prevNumber2 > num) {
-      return result;
+      return result[result.length - 1];
     }
     result.push(prevNumber1 + prevNumber2);
   }
-  return result;
+  return result[result.length - 1];
 };
 
 console.log(maxFibonacci(22));
