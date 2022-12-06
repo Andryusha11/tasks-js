@@ -6,7 +6,6 @@ export const addImage = (imgSrc, callback) => {
   imgElem.src = imgSrc;
 
   const containerElem = document.querySelector('.page');
-  containerElem.append(imgElem);
 
   const onImageLoaded = () => {
     callback(null, imgElem);
@@ -15,6 +14,8 @@ export const addImage = (imgSrc, callback) => {
   imgElem.addEventListener('load', onImageLoaded);
 
   imgElem.addEventListener('error', () => callback('Image load is failed'));
+
+  containerElem.append(imgElem);
 };
 
 // callack function
