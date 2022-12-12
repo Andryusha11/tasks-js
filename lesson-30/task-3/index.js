@@ -10,8 +10,6 @@ const userDataPromise = new Promise((resolve) => {
  * Ответьте себе на вопрос, какой тип данных имеет переменная userDataPromise?
  */
 
-/* ...code here */
-
 console.log(userDataPromise);
 console.log(typeof userDataPromise);
 
@@ -20,7 +18,6 @@ console.log(typeof userDataPromise);
  * Ответьте себе на вопрос, что находится в переменной userData?
  */
 userDataPromise.then(function onSuccess(userData) {
-  /* ...code here */
   console.log(userData);
 });
 
