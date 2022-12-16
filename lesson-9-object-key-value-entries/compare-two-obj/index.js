@@ -58,11 +58,11 @@ const obj5 = {
   name: 'Tom',
 };
 
-// compareObjects(obj1, obj2); // ==> false
-// compareObjects(obj2, obj3); // ==> false
-// compareObjects(obj1, obj4); // ==> true
-// compareObjects(obj4, obj5); // ==> true
-console.log(compareObjects(obj1, obj2)); // ==> false
-console.log(compareObjects(obj2, obj3)); // ==> false
-console.log(compareObjects(obj1, obj4)); // ==> true
-console.log(compareObjects(obj4, obj5)); // ==> true
+compareObjects(obj1, obj2); // ==> false
+compareObjects(obj2, obj3); // ==> false
+compareObjects(obj1, obj4); // ==> true
+compareObjects(obj4, obj5); // ==> true
+// console.log(compareObjects(obj1, obj2)); // ==> false
+// console.log(compareObjects(obj2, obj3)); // ==> false
+// console.log(compareObjects(obj1, obj4)); // ==> true
+// console.log(compareObjects(obj4, obj5)); // ==> true
