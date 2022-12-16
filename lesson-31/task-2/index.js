@@ -15,4 +15,9 @@ export const asyncCalculator = (num) =>
           }, 500);
         })
     )
-    .then((num) => console.log(`Doubled value: ${num * 2}`));
+    .then((num) => {
+      const result = num * 2;
+      console.log(`Doubled value: ${result}`);
+      return result;
+    })
+    .then((num) => console.log(num));
