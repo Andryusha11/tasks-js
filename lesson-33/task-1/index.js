@@ -15,7 +15,7 @@ const renderUserData = (userData) => {
   const { avatar_url, location, name } = userData;
   userAvatarImgElem.src = avatar_url;
   userNameSpanElem.textContent = name;
-  userLocationSpanElem.textContent = location;
+  userLocationSpanElem.textContent = location ? `from ${location}` : '';
 };
 
 const initialRequest = () => {
