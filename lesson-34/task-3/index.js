@@ -17,11 +17,10 @@ const validateForm = () => {
 
 const submitForm = (e) => {
   const entries = Object.fromEntries(new FormData(formElem));
-  postData(
-    'https://63aae1c6fdc006ba604eae9e.mockapi.io/api/v1/users',
-    entries
-  ).then((res) => alert(JSON.stringify(res)));
-  formElem.reset();
+  postData('https://63aae1c6fdc006ba604eae9e.mockapi.io/api/v1/users', entries)
+    .then((res) => alert(JSON.stringify(res)))
+    .then(() => formElem.reset());
+
   e.preventDefault();
 };
 
