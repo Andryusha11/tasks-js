@@ -7,7 +7,7 @@ const inputNameElem = document.querySelector('.name-form__input');
 const buttonNameElem = document.querySelector('.name-form__btn');
 
 const defaultUser = {
-  avatar_url: 'https://avatars3.githubusercontent.com/u10002',
+  avatar_url: 'https://avatars3.githubusercontent.com/u10001',
   location: '',
   name: '',
 };
