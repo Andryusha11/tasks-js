@@ -10,7 +10,12 @@ const getUsersBlogs = async (users) => {
   const resData = await Promise.all(
     users.map((user) =>
       fetch(`https://api.github.com/users/${user}`)
-        .then((response) => response.json())
+        .then((response) => {
+          if (response.ok) {
+            return response.json();
+          }
+          throw new Error('Some Error');
+        })
         .then((user) => user.blog)
     )
   );
