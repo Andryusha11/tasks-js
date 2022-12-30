@@ -1,6 +1,6 @@
 'use strict';
 
-const getUsersBlogs = async (users) => {
+export const getUsersBlogs = async (users) => {
   // put your code here
   const resData = await Promise.all(
     users.map((user) =>
